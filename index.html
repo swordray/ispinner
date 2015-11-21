@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>iSpinner</title>
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport" />
+    <link rel="stylesheet" media="all" href="ispinner.css" />
+    <style>
+      .container {
+        position: relative;
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        padding: 39px;
+        margin: 15px;
+        box-sizing: border-box;
+      }
+      .container.white {
+        background-color: black;
+      }
+      .container.large {
+        padding: 31.5px;
+      }
+      .container::after {
+        position: absolute;
+        width: 100px;
+        height: 30px;
+        left: 0;
+        bottom: -30px;
+        line-height: 30px;
+        text-align: center;
+        content: 'gray';
+      }
+      .container.white::after {
+        content: 'white';
+      }
+      .container.white.large::after {
+        content: 'white large';
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container gray">
+      <div class="ispinner gray animating">
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+      </div>
+    </div>
+    <div class="container white">
+      <div class="ispinner white animating">
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+      </div>
+    </div>
+    <div class="container white large">
+      <div class="ispinner white large animating">
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+      </div>
+    </div>
+  </body>
+</html>
