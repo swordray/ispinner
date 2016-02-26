@@ -20,36 +20,36 @@
   position: relative
   width: 20px
   height: 20px
-  .ispinner-blade
+  .ispinner__blade
     position: absolute
     left: 44.5%
     top: 37%
     width: 10%
     height: 25%
     border-radius: 50% / 20%
-    @include ispinner-animation(ispinner-fade 1s linear infinite)
+    @include ispinner-animation(ispinner__blade--fade 1s linear infinite)
     @include ispinner-animation-play-state(paused)
     @for $i from 1 through 12
       &:nth-child(#{$i})
         @include ispinner-animation-delay(1s / 12 * ($i - 21))
         @include ispinner-transform(rotate(#{360deg / 12 * $i}) translate(0, -150%))
-  &.animating
-    .ispinner-blade
+  &.ispinner--animating
+    .ispinner__blade
       @include ispinner-animation-play-state(running)
-  &.white
-    .ispinner-blade
+  &.ispinner--white
+    .ispinner__blade
       background-color: white
-  &.gray
-    .ispinner-blade
+  &.ispinner--gray
+    .ispinner__blade
       background-color: #8C8C8C
-  &.large
+  &.ispinner--large
     width: 35px
     height: 35px
-    .ispinner-blade
+    .ispinner__blade
       width: 100% / 35 * 3
       height: 100% / 35 * 9
       border-radius: 50% / 16.67%
-@include ispinner-keyframes(ispinner-fade)
+@include ispinner-keyframes(ispinner__blade--fade)
   0%
     opacity: 0.85
   50%

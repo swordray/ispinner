@@ -1,6 +1,6 @@
 # iSpinner
 
-Pure CSS spinner like UIActivityIndicatorView
+Pure CSS spinner like iOS UIActivityIndicatorView
 
 ## Demo
 
@@ -25,26 +25,26 @@ bower install ispinner
 2. Add ispinner element to your document's body
 
   ```html
-  <div class="ispinner gray animating">
-    <div class="ispinner-blade"></div>
-    <div class="ispinner-blade"></div>
-    <div class="ispinner-blade"></div>
-    <div class="ispinner-blade"></div>
-    <div class="ispinner-blade"></div>
-    <div class="ispinner-blade"></div>
-    <div class="ispinner-blade"></div>
-    <div class="ispinner-blade"></div>
-    <div class="ispinner-blade"></div>
-    <div class="ispinner-blade"></div>
-    <div class="ispinner-blade"></div>
-    <div class="ispinner-blade"></div>
+  <div class="ispinner ispinner--gray ispinner--animating">
+    <div class="ispinner__blade"></div>
+    <div class="ispinner__blade"></div>
+    <div class="ispinner__blade"></div>
+    <div class="ispinner__blade"></div>
+    <div class="ispinner__blade"></div>
+    <div class="ispinner__blade"></div>
+    <div class="ispinner__blade"></div>
+    <div class="ispinner__blade"></div>
+    <div class="ispinner__blade"></div>
+    <div class="ispinner__blade"></div>
+    <div class="ispinner__blade"></div>
+    <div class="ispinner__blade"></div>
   </div>
   ```
 
-3. Setup style by class `gray`, `white` or `white large`.
+3. Setup style by class `ispinner--gray`, `ispinner--white` or `ispinner--white ispinner--large`.
 
-4. Switch animation play state by toggling class `animating`.
+4. Switch animation play state by toggling class `ispinner--animating`.
 
 ## License
 
-Copyright © 2015 Jianqiu Xiao <swordray@gmail.com> under The [MIT License](http://opensource.org/licenses/MIT).
+Copyright © 2016 Jianqiu Xiao <swordray@gmail.com> under The [MIT License](http://opensource.org/licenses/MIT).
