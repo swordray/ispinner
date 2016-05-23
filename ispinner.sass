@@ -1,18 +1,18 @@
-@mixin ispinner-animation($args...)
+=ispinner-animation($args...)
   -webkit-animation: $args
   animation: $args
-@mixin ispinner-animation-delay($args...)
+=ispinner-animation-delay($args...)
   -webkit-animation-delay: $args
   animation-delay: $args
-@mixin ispinner-animation-play-state($args...)
+=ispinner-animation-play-state($args...)
   -webkit-animation-play-state: $args
   animation-play-state: $args
-@mixin ispinner-keyframes($name)
+=ispinner-keyframes($name)
   @-webkit-keyframes #{$name}
     @content
   @keyframes #{$name}
     @content
-@mixin ispinner-transform($args...)
+=ispinner-transform($args...)
   -webkit-transform: $args
   transform: $args
 
@@ -27,15 +27,15 @@
     width: 10%
     height: 25%
     border-radius: 50% / 20%
-    @include ispinner-animation(ispinner__blade--fade 1s linear infinite)
-    @include ispinner-animation-play-state(paused)
+    +ispinner-animation(ispinner__blade--fade 1s linear infinite)
+    +ispinner-animation-play-state(paused)
     @for $i from 1 through 12
       &:nth-child(#{$i})
-        @include ispinner-animation-delay(1s / 12 * ($i - 21))
-        @include ispinner-transform(rotate(#{360deg / 12 * $i}) translate(0, -150%))
+        +ispinner-animation-delay(1s / 12 * ($i - 21))
+        +ispinner-transform(rotate(#{360deg / 12 * $i}) translate(0, -150%))
   &.ispinner--animating
     .ispinner__blade
-      @include ispinner-animation-play-state(running)
+      +ispinner-animation-play-state(running)
   &.ispinner--white
     .ispinner__blade
       background-color: white
@@ -49,7 +49,7 @@
       width: 100% / 35 * 3
       height: 100% / 35 * 9
       border-radius: 50% / 16.67%
-@include ispinner-keyframes(ispinner__blade--fade)
++ispinner-keyframes(ispinner__blade--fade)
   0%
     opacity: 0.85
   50%
