@@ -10,9 +10,17 @@ http://swordray.github.io/ispinner/
 
 ## Installation
 
-```bash
-bower install ispinner
-```
+* NPM
+
+  ```bash
+  npm install -g ispinner.css
+  ```
+
+* Bower
+
+  ```bash
+  bower install ispinner
+  ```
 
 ## Usage
 
