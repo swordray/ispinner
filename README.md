@@ -27,7 +27,7 @@ http://swordray.github.io/ispinner/
 1. Include the stylesheet on your document's `<head>`
 
   ```html
-  <link rel="stylesheet" media="all" href="ispinner.css" />
+  <link rel="stylesheet" media="all" href="ispinner.prefixed.css" />
   ```
 
 2. Add ispinner element to your document's body

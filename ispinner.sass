@@ -1,21 +1,3 @@
-=ispinner-animation($args...)
-  -webkit-animation: $args
-  animation: $args
-=ispinner-animation-delay($args...)
-  -webkit-animation-delay: $args
-  animation-delay: $args
-=ispinner-animation-play-state($args...)
-  -webkit-animation-play-state: $args
-  animation-play-state: $args
-=ispinner-keyframes($name)
-  @-webkit-keyframes #{$name}
-    @content
-  @keyframes #{$name}
-    @content
-=ispinner-transform($args...)
-  -webkit-transform: $args
-  transform: $args
-
 .ispinner
   position: relative
   width: 20px
@@ -27,21 +9,21 @@
     width: 10%
     height: 25%
     border-radius: 50% / 20%
-    +ispinner-animation(ispinner__blade--fade 1s linear infinite)
-    +ispinner-animation-play-state(paused)
+    animation: ispinner__blade--fade 1s linear infinite
+    animation-play-state: paused
     @for $i from 1 through 12
       &:nth-child(#{$i})
-        +ispinner-animation-delay(1s / 12 * ($i - 21))
-        +ispinner-transform(rotate(#{360deg / 12 * $i}) translate(0, -150%))
+        animation-delay: 1s / 12 * ($i - 21)
+        transform: rotate(#{360deg / 12 * $i}) translate(0, -150%)
   &.ispinner--animating
     .ispinner__blade
-      +ispinner-animation-play-state(running)
+      animation-play-state: running
   &.ispinner--white
     .ispinner__blade
       background-color: white
   &.ispinner--gray
     .ispinner__blade
-      background-color: #8C8C8C
+      background-color: #8c8c8c
   &.ispinner--large
     width: 35px
     height: 35px
@@ -49,7 +31,8 @@
       width: 100% / 35 * 3
       height: 100% / 35 * 9
       border-radius: 50% / 16.67%
-+ispinner-keyframes(ispinner__blade--fade)
+
+@keyframes ispinner__blade--fade
   0%
     opacity: 0.85
   50%
