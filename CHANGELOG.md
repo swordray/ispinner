@@ -1,6 +1,8 @@
 # Changelog
 
 ## Unreleased
+
+## 1.2.1 (2018-02-22)
 - Add HTML templates in HTML/Pug.
 
 ## 1.2.0 (2017-12-18)
