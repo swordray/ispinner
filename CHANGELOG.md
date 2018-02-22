@@ -1,6 +1,7 @@
 # Changelog
 
 ## Unreleased
+- Add HTML templates in HTML/Pug.
 
 ## 1.2.0 (2017-12-18)
 - Remove prefix mixins in favor of Autoprefixer.
