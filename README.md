@@ -1,14 +1,20 @@
 # iSpinner
 
-Pure CSS spinner like iOS UIActivityIndicatorView
+Pure CSS spinner like iOS UIActivityIndicatorView.
 
 ## Demo
 
-![Alt text](http://swordray.github.io/ispinner/index.png)
+[![Alt text](http://swordray.github.io/ispinner/index.png)](http://swordray.github.io/ispinner/)
 
 http://swordray.github.io/ispinner/
 
 ## Installation
+
+* Yarn
+
+  ```bash
+  yarn add ispinner.css
+  ```
 
 * NPM
 
@@ -24,13 +30,13 @@ http://swordray.github.io/ispinner/
 
 ## Usage
 
-1. Include the stylesheet on your document's `<head>`
+1. Include the stylesheet in the document `<head>`.
 
   ```html
-  <link rel="stylesheet" media="all" href="ispinner.prefixed.css" />
+  <link rel="stylesheet" media="all" href="ispinner.prefixed.css">
   ```
 
-2. Add ispinner element to your document's body
+2. Add a ispinner element to the document body.
 
   ```html
   <div class="ispinner ispinner--gray ispinner--animating">
@@ -55,4 +61,4 @@ http://swordray.github.io/ispinner/
 
 ## License
 
-Copyright © 2016 Jianqiu Xiao <swordray@gmail.com> under The [MIT License](http://opensource.org/licenses/MIT).
+Copyright © 2018 Jianqiu Xiao <swordray@gmail.com> under The [MIT License](http://opensource.org/licenses/MIT).
