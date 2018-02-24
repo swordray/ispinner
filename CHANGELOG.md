@@ -1,6 +1,7 @@
 # Changelog
 
 ## Unreleased
+- Rename animation name in camel case.
 
 ## 1.2.1 (2018-02-22)
 - Add HTML templates in HTML/Pug.
