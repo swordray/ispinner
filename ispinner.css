@@ -48,7 +48,8 @@
       animation-delay: -0.75s;
       transform: rotate(360deg) translate(0, -150%); }
   .ispinner.ispinner--animating .ispinner__blade {
-    animation-play-state: running; }
+    animation-play-state: running;
+    will-change: opacity; }
   .ispinner.ispinner--white .ispinner__blade {
     background-color: white; }
   .ispinner.ispinner--gray .ispinner__blade {
