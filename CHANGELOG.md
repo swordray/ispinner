@@ -1,6 +1,8 @@
 # Changelog
 
 ## Unreleased
+
+## 1.2.2 (2019-01-28)
 - Add will-change for better animation performance.
 - Rename animation name in camel case.
 
