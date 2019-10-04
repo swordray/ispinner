@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 2.0.0 (2019-10-04)
+
 - Support iOS 13 `medium` and `large` styles.
 - Drop BEM naming convention.
 
