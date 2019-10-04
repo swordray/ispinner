@@ -39,26 +39,39 @@ http://swordray.github.io/ispinner/
 2. Add a ispinner element to the document body.
 
   ```html
-  <div class="ispinner ispinner--gray ispinner--animating">
-    <div class="ispinner__blade"></div>
-    <div class="ispinner__blade"></div>
-    <div class="ispinner__blade"></div>
-    <div class="ispinner__blade"></div>
-    <div class="ispinner__blade"></div>
-    <div class="ispinner__blade"></div>
-    <div class="ispinner__blade"></div>
-    <div class="ispinner__blade"></div>
-    <div class="ispinner__blade"></div>
-    <div class="ispinner__blade"></div>
-    <div class="ispinner__blade"></div>
-    <div class="ispinner__blade"></div>
+  <!-- style: medium -->
+  <div class="ispinner">
+    <div class="ispinner-blade"></div>
+    <div class="ispinner-blade"></div>
+    <div class="ispinner-blade"></div>
+    <div class="ispinner-blade"></div>
+    <div class="ispinner-blade"></div>
+    <div class="ispinner-blade"></div>
+    <div class="ispinner-blade"></div>
+    <div class="ispinner-blade"></div>
+    <div class="ispinner-blade"></div>
+    <div class="ispinner-blade"></div>
+    <div class="ispinner-blade"></div>
+    <div class="ispinner-blade"></div>
+  </div>
+
+  <!-- style: large -->
+  <div class="ispinner ispinner-large">
+    <div class="ispinner-blade"></div>
+    <div class="ispinner-blade"></div>
+    <div class="ispinner-blade"></div>
+    <div class="ispinner-blade"></div>
+    <div class="ispinner-blade"></div>
+    <div class="ispinner-blade"></div>
+    <div class="ispinner-blade"></div>
+    <div class="ispinner-blade"></div>
+    <div class="ispinner-blade"></div>
+    <div class="ispinner-blade"></div>
+    <div class="ispinner-blade"></div>
+    <div class="ispinner-blade"></div>
   </div>
   ```
 
-3. Setup style by class `ispinner--gray`, `ispinner--white` or `ispinner--white ispinner--large`.
-
-4. Switch animation play state by toggling class `ispinner--animating`.
-
 ## License
 
-Copyright © 2018 Jianqiu Xiao <swordray@gmail.com> under The [MIT License](http://opensource.org/licenses/MIT).
+Copyright © 2019 Jianqiu Xiao <swordray@gmail.com> under The [MIT License](http://opensource.org/licenses/MIT).

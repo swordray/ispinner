@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Support iOS 13 `medium` and `large` styles.
+- Drop BEM naming convention.
+
 ## 1.2.2 (2019-01-28)
 - Add will-change for better animation performance.
 - Rename animation name in camel case.
