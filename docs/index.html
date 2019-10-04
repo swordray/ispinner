@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>iSpinner</title>
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" media="all" href="ispinner.prefixed.css" />
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+      html, body {
+        background-color: white;
+      }
+      @media (prefers-color-scheme: dark) {
+        html, body {
+          background-color: black;
+        }
+      }
+      .container {
+        position: relative;
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        margin: 15px;
+        box-sizing: border-box;
+      }
+      .container:first-child {
+        padding: 39px;
+      }
+      .container:last-child {
+        padding: 31.5px;
+      }
+      .container::after {
+        position: absolute;
+        width: 100px;
+        height: 30px;
+        left: 0;
+        bottom: -30px;
+        line-height: 30px;
+        text-align: center;
+      }
+      .container:first-child::after {
+        content: 'medium';
+      }
+      .container:last-child::after {
+        content: 'large';
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="ispinner">
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="ispinner ispinner-large">
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+        <div class="ispinner-blade"></div>
+      </div>
+    </div>
+  </body>
+</html>

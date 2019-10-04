@@ -2,9 +2,7 @@
 
 Pure CSS spinner like iOS UIActivityIndicatorView.
 
-## Demo
-
-[![Alt text](http://swordray.github.io/ispinner/index.png)](http://swordray.github.io/ispinner/)
+## Preview
 
 http://swordray.github.io/ispinner/
 
