@@ -4,25 +4,30 @@
   height: 20px
   .ispinner-blade
     position: absolute
-    top: 37%
-    left: 44.5%
-    width: 10%
-    height: 25%
+    top: 6.5px
+    left: 8.5px
+    width: 2.5px
+    height: 6.5px
     background-color: #8e8e93
-    border-radius: 50% / 20%
+    border-radius: 1.25px
     animation: iSpinnerBlade 1s linear infinite
     will-change: opacity
-    @for $i from 1 through 12
+    @for $i from 1 through 8
       &:nth-child(#{$i})
-        transform: rotate(#{360deg / 12 * $i}) translate(0, -150%)
-        animation-delay: 1s / 12 * ($i - 21)
+        transform: rotate(#{360deg / 8 * $i}) translateY(-6.5px)
+        animation-delay: 1s / 8 * ($i - 14)
   &.ispinner-large
     width: 35px
     height: 35px
     .ispinner-blade
-      width: 100% / 35 * 3
-      height: 100% / 35 * 9
-      border-radius: 50% / 16.67%
+      top: 11.5px
+      left: 15px
+      width: 5px
+      height: 12px
+      border-radius: 2.5px
+      @for $i from 1 through 8
+        &:nth-child(#{$i})
+          transform: rotate(#{360deg / 8 * $i}) translateY(-11.5px)
 
 @keyframes iSpinnerBlade
   0%
