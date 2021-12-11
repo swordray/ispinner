@@ -1,3 +1,5 @@
+@use 'sass:math'
+
 .ispinner
   position: relative
   width: 20px
@@ -14,8 +16,8 @@
     will-change: opacity
     @for $i from 1 through 8
       &:nth-child(#{$i})
-        transform: rotate(#{360deg / 8 * $i}) translateY(-6.5px)
-        animation-delay: 1s / 8 * ($i - 14)
+        transform: rotate(math.div(360deg, 8) * $i) translateY(-6.5px)
+        animation-delay: math.div(1s, 8) * ($i - 14)
   &.ispinner-large
     width: 35px
     height: 35px
@@ -27,7 +29,7 @@
       border-radius: 2.5px
       @for $i from 1 through 8
         &:nth-child(#{$i})
-          transform: rotate(#{360deg / 8 * $i}) translateY(-11.5px)
+          transform: rotate(math.div(360deg, 8) * $i) translateY(-11.5px)
 
 @keyframes iSpinnerBlade
   0%

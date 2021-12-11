@@ -20,12 +20,6 @@ http://swordray.github.io/ispinner/
   npm install -g ispinner.css
   ```
 
-* Bower
-
-  ```bash
-  bower install ispinner
-  ```
-
 ## Usage
 
 1. Include the stylesheet in the document `<head>`.
@@ -47,18 +41,12 @@ http://swordray.github.io/ispinner/
     <div class="ispinner-blade"></div>
     <div class="ispinner-blade"></div>
     <div class="ispinner-blade"></div>
-    <div class="ispinner-blade"></div>
-    <div class="ispinner-blade"></div>
-    <div class="ispinner-blade"></div>
-    <div class="ispinner-blade"></div>
   </div>
+  ```
 
+  ```html
   <!-- style: large -->
   <div class="ispinner ispinner-large">
-    <div class="ispinner-blade"></div>
-    <div class="ispinner-blade"></div>
-    <div class="ispinner-blade"></div>
-    <div class="ispinner-blade"></div>
     <div class="ispinner-blade"></div>
     <div class="ispinner-blade"></div>
     <div class="ispinner-blade"></div>
@@ -72,4 +60,4 @@ http://swordray.github.io/ispinner/
 
 ## License
 
-Copyright © 2019 Jianqiu Xiao <swordray@gmail.com> under The [MIT License](http://opensource.org/licenses/MIT).
+Copyright © 2021 Jianqiu Xiao <swordray@gmail.com> under The [MIT License](http://opensource.org/licenses/MIT).
