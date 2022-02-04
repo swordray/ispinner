@@ -1,8 +1,9 @@
 {
   "name": "ispinner.css",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "Pure CSS spinner like UIActivityIndicatorView.",
   "repository": "https://github.com/swordray/ispinner.git",
+  "homepage": "https://bailushuyuan.org",
   "author": "Jianqiu Xiao <swordray@gmail.com>",
   "license": "MIT"
 }
